@@ -19,7 +19,6 @@ class ParteCarro:
     def __str__(self):
         return f"{self.nome}"
 
-# Exemplo de uso
 carro = ParteCarro("Carro")
 motor = ParteCarro("Motor")
 rodas = ParteCarro("Rodas")
@@ -33,13 +32,11 @@ print("Carro e suas partes:")
 for parte in carro.subpartes:
     print(parte)
 
-# Movendo as partes
 carro.mover_subparte(motor, 2)
 print("\nCarro após mover o motor para a última posição:")
 for parte in carro.subpartes:
     print(parte)
 
-# Removendo uma parte
 carro.remover_subparte(assentos)
 print("\nCarro após remover os assentos:")
 for parte in carro.subpartes:
